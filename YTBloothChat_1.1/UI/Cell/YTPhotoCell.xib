@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="YTPhotoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="L0w-hj-jLW">
+                        <rect key="frame" x="15" y="7" width="72" height="65"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sz0-HI-4f8">
+                        <rect key="frame" x="240" y="25" width="68" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.18975503883750675" green="0.76111544532661923" blue="0.87690800428390503" alpha="0.57000000000000006" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="发送">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="sendPhoto:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="M9r-Ot-oSV"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.10196079313755035" green="0.15686275064945221" blue="0.17254902422428131" alpha="1" colorSpace="deviceRGB"/>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headerImageView" destination="L0w-hj-jLW" id="DGS-i1-WOs"/>
+                <outlet property="sendBtn" destination="sz0-HI-4f8" id="Yks-1M-POU"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

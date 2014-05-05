@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="bpU-l4-CNt">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="eQr-qr-QQb">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="bpU-l4-CNt" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jWb-vl-uh8">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Hvo-6f-tKf" kind="relationship" relationship="rootViewController" id="nKn-yT-cJF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUQ-Yl-yBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-230" y="91"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hHV-h9-S1N">
+            <objects>
+                <viewController id="Hvo-6f-tKf" customClass="YTViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="178-fB-dyr">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YT_Back_Image.png" id="Dt1-iD-FiE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="Click_Id" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jvf-4V-JtR">
+                                <rect key="frame" x="85" y="129" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="18"/>
+                                <state key="normal" title="点击配对" backgroundImage="YT_State_Btn_Normal.png">
+                                    <color key="titleColor" red="0.96470594409999999" green="0.96470594409999999" blue="0.96470594409999999" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startConnect:" destination="Hvo-6f-tKf" eventType="touchUpInside" id="48G-go-6cn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ra8-o8-ZjV">
+                                <rect key="frame" x="200" y="299" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="18"/>
+                                <state key="normal" backgroundImage="YT_File_Btn_Normal.png">
+                                    <color key="titleColor" red="0.96470594409999999" green="0.96470594409999999" blue="0.96470594409999999" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterPhotoPicker:" destination="Hvo-6f-tKf" eventType="touchUpInside" id="pKf-We-VRU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="r4Q-ea-pJC">
+                                <rect key="frame" x="20" y="299" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="18"/>
+                                <state key="normal" backgroundImage="YT_Chat_Btn_Normal.png">
+                                    <color key="titleColor" red="0.96470594409999999" green="0.96470594409999999" blue="0.96470594409999999" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterChat:" destination="Hvo-6f-tKf" eventType="touchUpInside" id="Ymh-As-U1B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tvL-Xm-udE"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="_chatButton" destination="r4Q-ea-pJC" id="Bo2-0K-tsX"/>
+                        <outlet property="_photoButton" destination="ra8-o8-ZjV" id="hug-Fd-pQf"/>
+                        <outlet property="_stateButton" destination="Jvf-4V-JtR" id="A9h-bp-eUa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0W7-oO-f3k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="91"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="YT_Back_Image.png" width="320" height="568"/>
+        <image name="YT_Chat_Btn_Normal.png" width="150" height="150"/>
+        <image name="YT_File_Btn_Normal.png" width="150" height="150"/>
+        <image name="YT_State_Btn_Normal.png" width="250" height="250"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  YTBloothChat
+
+  Created by 黄 伟华 on 5/5/14.
+  Copyright (c) 2014 黄伟华. All rights reserved.
+*/
+//state
+"UnMatch_Name" = "未连接";
+
+"Click_To_Match" = "点击配对";
+"Click_To_Disconnect" = "点击断开";
+
+"PlaceHolder" = "说些什么呢?";
+"Send_Button_Title" = "发送";
+
+// alert
+
+"Disconnect_Alert" = "要断开连接么?";
+"Cancel" = "取消";
+"OK" = "确定";
+"UnCompleted" = "请等待上一个完成";
+"Check_Connect_State" = "请检查连接状态";
+"Reciving_Alert" = "正在接收图片，请稍等...";
+"Reciving_Completed_Alert" = "图片接收完成，请到图片查看照片";
+
+"First_Connect" = "请先和另外一个设备连接";
+"Un_Read_Message" = "未读信息 ";

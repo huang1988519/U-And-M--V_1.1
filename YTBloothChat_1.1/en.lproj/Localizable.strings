@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  YTBloothChat
+
+  Created by 黄 伟华 on 5/5/14.
+  Copyright (c) 2014 黄伟华. All rights reserved.
+*/
+//state
+"UnMatch_Name" = "no connected";
+
+//
+"Click_To_Match" = "Click To Match";
+"Click_To_Disconnect" = "Disconnect";
+
+"PlaceHolder" = "say something here";
+"Send_Button_Title" = "Send";
+
+// alert
+
+"Disconnect_Alert" = "Do you want to disconnect?";
+"Cancel" = "Cancel";
+"OK" = "OK";
+"UnCompleted" = "Please wait last one completed";
+"Check_Connect_State" = "Please check the connection status";
+"Reciving_Alert" = "Receiving pictures, please wait ...";
+"Reciving_Completed_Alert" = "Receive complete, open Photos App to review";
+
+"First_Connect" = "Please connect Bluetooth pairing";
+"Un_Read_Message" = "You have unread messages";
